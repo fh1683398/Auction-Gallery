@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Vintage Rolex Submariner Watch",
+    "description": "A rare 1960s vintage Rolex Submariner watch in excellent working condition with original dial.",
+    "currentBidPrice": 12500,
+    "timeLeft": "3h 20m",
+    "bidsCount": 24,
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+  },
+  {
+    "id": 2,
+    "title": "Ancient Roman Coin",
+    "description": "Authentic ancient Roman silver coin dating back over 1,800 years, preserved in protective casing.",
+    "currentBidPrice": 3200,
+    "timeLeft": "5h 45m",
+    "bidsCount": 17,
+    "image": "https://images.unsplash.com/photo-1612831455547-82c3e5c5e8f0"
+  },
+  {
+    "id": 3,
+    "title": "First Edition Classic Book",
+    "description": "Rare first edition hardcover of a classic literary masterpiece in collectible condition.",
+    "currentBidPrice": 4800,
+    "timeLeft": "1h 55m",
+    "bidsCount": 13,
+    "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794"
+  },
+  {
+    "id": 4,
+    "title": "Antique Samurai Katana",
+    "description": "Hand-forged traditional Japanese samurai katana with detailed craftsmanship and wooden stand.",
+    "currentBidPrice": 15200,
+    "timeLeft": "7h 10m",
+    "bidsCount": 29,
+    "image": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04"
+  },
+  {
+    "id": 5,
+    "title": "Vintage Polaroid Camera",
+    "description": "Classic Polaroid instant camera from the 1970s, fully functional and well maintained.",
+    "currentBidPrice": 2100,
+    "timeLeft": "2h 40m",
+    "bidsCount": 11,
+    "image": "https://images.unsplash.com/photo-1519183071298-a2962be96c1f"
+  },
+  {
+    "id": 6,
+    "title": "Rare World Map (18th Century)",
+    "description": "Detailed antique world map from the 18th century, framed and preserved in excellent condition.",
+    "currentBidPrice": 8900,
+    "timeLeft": "4h 05m",
+    "bidsCount": 19,
+    "image": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd"
+  }
+]
