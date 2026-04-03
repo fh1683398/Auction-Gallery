@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div style={{
             backgroundImage: `url(${bgImage})`
-        }} className='relative pt-60 pb-50 bg-cover bg-center'>
+        }} className='relative py-30 md:pt-60 md:pb-50 bg-cover bg-center'>
 
             <div className='absolute inset-0 bg-black/70'></div>
             <div className='max-w-384 mx-auto'>

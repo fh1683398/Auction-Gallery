@@ -13,7 +13,7 @@ const Navbar = () => {
                 <div className='flex gap-2 md:gap-4 items-center'>
 
                     <span
-                        className='cursor-pointer md:hidden'
+                        className='cursor-pointer lg:hidden'
                         onClick={() => setOpenMenu(!openMenu)}
                     > {openMenu ? <AiOutlineClose size={25} /> : <IoMenu size={25} />}
                     </span>
@@ -23,7 +23,7 @@ const Navbar = () => {
                     </a>
                 </div>
 
-                <ul className='hidden md:flex gap-8 text-gray-700 cursor-pointer'>
+                <ul className='hidden lg:flex gap-8 text-gray-700 cursor-pointer'>
                     <a href="">
                         <li>Home</li>
                     </a>
@@ -52,10 +52,10 @@ const Navbar = () => {
             {/* //Mobile menu */}
             {
                 openMenu && (
-                    <div className='md:hidden fixed w-full h-screen z-50 inset-0 bg-black/60'
+                    <div className='lg:hidden fixed w-full h-screen z-50 inset-0 bg-black/60'
                         onClick={() => setOpenMenu(false)}>
 
-                        <div className='bg-white w-64 h-screen p-6 space-y-6'
+                        <div className='bg-white w-2/3 h-screen p-6 space-y-6'
                             onClick={(e) => e.stopPropagation()}
                         >
                             <div>
