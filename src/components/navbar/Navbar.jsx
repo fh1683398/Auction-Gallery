@@ -8,7 +8,7 @@ const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false)
     return (
         <div className='relative'>
-            <div className='flex justify-between max-w-384 mx-auto py-5 md:py-10 items-center px-2 md:px-0'>
+            <div className='flex justify-between max-w-384 mx-auto py-5 md:py-10 items-center px-4 md:px-6 lg:px-0'>
 
                 <div className='flex gap-2 md:gap-4 items-center'>
 

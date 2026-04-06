@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaRegHeart } from "react-icons/fa";
 
-const Table = () => {
+const Table = ({ handleBidNowBtn }) => {
     const [items, setItems] = useState([])
 
     useEffect(() => {
@@ -20,8 +20,8 @@ const Table = () => {
                 </thead>
                 <tbody>
                     {
-                        items.map(item=>(
-                            <tr key={item.id} className='border-b border-gray-300 text-gray-700'>
+                        items.map(item => (
+                            <tr key={item.id} className='border-b border-gray-300 text-gray-700 last:border-b-0'>
                                 <td className='p-4 flex flex-col md:flex-row md:items-center gap-4 text-left'>
                                     <img className='w-16 h-16 md:w-24 md:h-24 object-cover' src={item.image} alt={item.title} />
                                     <span className='text-xs md:text-base'>{item.title}</span>
@@ -30,7 +30,7 @@ const Table = () => {
                                 <td className='p-4 text-xs md:text-base'>{item.timeLeft}</td>
                                 <td className='p-4'>
                                     <div className='flex items-center justify-center'>
-                                        <button className='cursor-pointer'><FaRegHeart /></button>
+                                        <button onClick={() => handleBidNowBtn(item)} className='cursor-pointer'><FaRegHeart /></button>
                                     </div>
                                 </td>
                             </tr>
