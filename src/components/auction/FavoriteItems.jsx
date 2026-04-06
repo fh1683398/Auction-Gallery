@@ -1,12 +1,14 @@
-import React from 'react';
 import { FaRegHeart } from "react-icons/fa";
 import { GoX } from "react-icons/go";
 
 const FavoriteItems = ({ favItem, handleRemoveItem }) => {
-    console.log(favItem)
+    const newAmount = favItem.reduce((total, item) => {
+        return (total + item.currentBidPrice)
+    }, 0)
+
     return (
-        <div className='border border-gray-300 rounded-lg  text-gray-700'>
-            <div className='flex p-6 border-b border-gray-300 gap-4 justify-center items-center font-medium text-2xl md:text-3xl'>
+        <div id="favItemSection" className='border border-gray-300 rounded-lg  text-gray-700 bg-white'>
+            <div className='flex p-6 border-b border-gray-300 gap-4 justify-center items-center font-medium text-2xl'>
                 <FaRegHeart />
                 <h4>Favorite Items</h4>
 
@@ -27,7 +29,7 @@ const FavoriteItems = ({ favItem, handleRemoveItem }) => {
                                     </div>
                                 </div>
                                 <div>
-                                    <button onClick={()=>handleRemoveItem(item)}><GoX size={25}/></button>
+                                    <button onClick={() => handleRemoveItem(item)}><GoX size={25} /></button>
                                 </div>
                             </div>
                         }
@@ -40,9 +42,9 @@ const FavoriteItems = ({ favItem, handleRemoveItem }) => {
                 )
             }
 
-            <div className='flex justify-between p-4'>
-                <h4 className='text-lg md:text-2xl'>Total bids Amount</h4>
-                <span className='font-medium text-lg md:text-2xl'>$0000</span>
+            <div className={`flex justify-between p-4 ${favItem.length < 1 ? "border-t border-gray-300": ""}`}>
+                <h4 className='md:text-xl'>Total bids Amount</h4>
+                <span className='font-medium md:text-xl'>${newAmount}</span>
             </div>
         </div>
     );

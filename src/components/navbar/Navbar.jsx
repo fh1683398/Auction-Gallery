@@ -4,11 +4,11 @@ import { IoMenu } from "react-icons/io5";
 import { AiOutlineClose } from "react-icons/ai";
 import user from "/src/assets/user.jpg"
 
-const Navbar = () => {
+const Navbar = ({favItem, scrollToSection}) => {
     const [openMenu, setOpenMenu] = useState(false)
     return (
-        <div className='relative'>
-            <div className='flex justify-between max-w-384 mx-auto py-5 md:py-10 items-center px-4 md:px-6 lg:px-0'>
+        <div id='navbar' className='relative bg-white'>
+            <div className='flex justify-between max-w-384 mx-auto py-4 md:py-6 items-center px-4 md:px-6 lg:px-0'>
 
                 <div className='flex gap-2 md:gap-4 items-center'>
 
@@ -27,8 +27,8 @@ const Navbar = () => {
                     <a href="">
                         <li>Home</li>
                     </a>
-                    <a href="">
-                        <li>Action</li>
+                    <a href="#auction">
+                        <li>Auction</li>
                     </a>
                     <a href="">
                         <li>Categories</li>
@@ -40,12 +40,12 @@ const Navbar = () => {
 
                 <div className='flex gap-2 md:gap-4 items-center h-10 border-box'>
 
-                    <button className='bg-gray-200 p-2 md:p-4 rounded-full relative'>
-                        <span className='absolute right-2 top-2 bg-gray-700 text-white text-xs md:text-sm w-4 h-4 md:w-5 md:h-5 rounded-full flex items-center justify-center'>5</span>
+                    <button onClick={()=>scrollToSection("favItemSection")} className='bg-gray-200 p-2 rounded-full relative'>
+                        <span className='absolute right-2 top-2 bg-gray-700 text-white text-xs w-4 h-4 rounded-full flex items-center justify-center'>{favItem.length}</span>
                         <IoMdNotificationsOutline size={25} />
                     </button>
 
-                    <img className='w-10 md:w-14 rounded-full' src={user} alt="" />
+                    <img className='w-10 rounded-full' src={user} alt="" />
                 </div>
             </div>
 

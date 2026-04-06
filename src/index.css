@@ -2,10 +2,14 @@
 @import "tailwindcss";
 body{
     font-family: "Sora", sans-serif;
+    background-color: #DCE5F3;
 }
 :root{
     --DeepBlue:  #0E2954;
 }
 button{
     cursor: pointer;
+}
+button:disabled{
+    cursor: not-allowed;
 }
